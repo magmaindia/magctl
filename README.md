@@ -10,12 +10,14 @@ First we need to provide the certificates generates during the deployment of Mag
 After that we need to follow these steps: <br />
 ```bash
 git clone magctl
+cd magctl
 ```
 
 Install go latest version. Then,
 
+We need to do some updation in code. We only need to update in **/cmd/tenants.go** file. In this, we need to update line no. 38 where correct NMS-Domain needs to be provided and also on line no. 60 where correct certificates paths should be provided.
+
 ```bash
-cd magctl
 go install
 go build
 sudo mv magctl /usr/local/bin
