@@ -35,7 +35,7 @@ type Tenants struct {
 }
 
 func getTenants() {
-	url := "https://api.galaxy.nitin.com/magma/v1/tenants"
+	url := "https://api.nmsDomain.com/magma/v1/tenants"
 	responseBytes := getTenantsData(url)
 
 	var tenants []Tenants
@@ -57,7 +57,7 @@ func checkError(err error, hdr string) {
 
 func getTenantsData(baseAPI string) []byte {
 
-	cert, err := tls.LoadX509KeyPair("/home/nitin/Project/magma/cmd/admin_operator.pem", "/home/nitin/Project/magma/cmd/admin_operator.key.pem")
+	cert, err := tls.LoadX509KeyPair("/path/to/admin_operator.pem", "/path/to/admin_operator.key.pem")
 	checkError(err, "loadcert")
 
 	tr := &http.Transport{
