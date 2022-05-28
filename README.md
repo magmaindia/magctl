@@ -6,6 +6,7 @@ magctl is CLI Tool for magma, through which we will able to get results of list 
 
 # How to use
 First we need to provide the certificates generates during the deployment of Magma Orchestrator under the folder **magctl/cmd/** <br />
+
 After that we need to follow these steps: <br />
 ```bash
 git clone magctl
