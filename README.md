@@ -10,7 +10,11 @@ First we need to provide the certificates generates during the deployment of Mag
 After that we need to follow these steps: <br />
 ```bash
 git clone magctl
-install go
+```
+
+Install go latest version. Then,
+
+```bash
 cd magctl
 go install
 go build
